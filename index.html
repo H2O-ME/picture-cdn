@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清栈·免费图床CDN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h1>清栈图床上传工具</h1>
+            </div>
+            <p class="subtitle">免费、快速、可靠的图片托管服务</p>
+        </header>
+        
+        <div class="upload-container">
+            <div class="upload-box" id="dropZone">
+                <input type="file" id="fileInput" accept="image/*">
+                <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <div class="upload-info">
+                    <span>点击选择或拖拽文件至此</span>
+                    <p>支持格式：JPEG/PNG/GIF（最大5MB）</p>
+                </div>
+            </div>
+            <button id="uploadBtn"><i class="fas fa-upload"></i> 开始上传</button>
+            <div class="result-container" id="resultContainer"></div>
+        </div>
+        
+        <footer>
+            <p>THW   <a href="#">使用条款</a> · <a href="#">隐私政策</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
